@@ -7,6 +7,7 @@ import myfirstproject.maketacos.Taco;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Arrays;
@@ -50,4 +51,11 @@ public class DesignController {
                 .collect(Collectors.toList());
 
     }
+
+//    @PostMapping
+//    public String processDesign(Design design){
+//        //save the taco design
+//        log.info("processing design: "+design);
+//        return "redirect:/orders/current";
+//    }
 }
